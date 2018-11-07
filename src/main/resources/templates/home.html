@@ -22,7 +22,7 @@
                         Tambah User Baru
                     </div>
                     <div class="card-body">
-                        <form th:action="@{/user/addUser}" method="post">
+                        <form th:action="@{/user/changePassword}" method="post">
                         	<div class="row-form-group">
                         		<label class="col-sm-4">User Name</label>
                         		<input class="col-sm-8 form-control input-sm" type="text" name="username"/>
@@ -40,35 +40,6 @@
                         	</div>
                         </form>
                     </div>
-                </div>
-            </div>
-        </div>
-        <br>
-        <div class="row">
-            <div class="col-md-6">
-                <div class="card">
-                    <div class="card-header">
-                        Update Password
-                    </div>
-                    <div class="card-body">
-                        <form th:action="@{/user/addUser}" method="post">
-                        	<div class="row-form-group">
-                        		<label class="col-sm-8">Password Lama: </label>
-                        		<input class="col-sm-8 form-control input-sm" type="password" name="password"/>
-                        	</div>
-                        	<div class="row-form-group">
-                        		<label class="col-sm-8">Password Baru: </label>
-                        		<input class="col-sm-8 form-control input-sm" type="password" name="password"/>
-                        	</div>
-                        	<div class="row-form-group">
-                        		<label class="col-sm-8">Konfirmasi Password Baru: </label>
-                        		<input class="col-sm-8 form-control input-sm" type="password" name="password"/>
-                        	</div>
-                        	<div>
-                       			<button type="submit" class="btn btn-primary">Simpan</button>
-                        	</div>
-                        </form>
-                	</div>
                 </div>
             </div>
         </div>

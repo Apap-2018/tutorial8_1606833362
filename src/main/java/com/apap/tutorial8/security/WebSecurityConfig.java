@@ -32,13 +32,13 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
 			.permitAll();
 	}
 	
-	@Autowired
+/*	@Autowired
 	public void configureGlobal (AuthenticationManagerBuilder auth) throws Exception {
 		auth.inMemoryAuthentication()
 			.passwordEncoder(encoder())
 			.withUser("cokicoki").password(encoder().encode("enaksekali"))
 			.roles("USER");
-	}
+	}*/
 	
 	@Bean
 	public BCryptPasswordEncoder encoder() {
