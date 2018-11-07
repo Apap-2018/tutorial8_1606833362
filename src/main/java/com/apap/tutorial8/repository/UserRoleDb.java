@@ -5,6 +5,7 @@ import org.springframework.stereotype.Repository;
 
 import com.apap.tutorial8.model.UserRoleModel;
 
+@Repository
 public interface UserRoleDb extends JpaRepository<UserRoleModel, Long> {
 	UserRoleModel findByUsername(String username);
 
